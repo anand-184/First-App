@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="fill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#B4EFBBD2">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/calistoga"
+        android:padding="20dp"
+
+
+        android:text="@string/app_name"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="#6C065E"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp30"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp15"
+            android:fontFamily="@font/arima_madurai_medium"
+            android:paddingTop="@dimen/dp_20"
+            android:text="@string/name"
+            android:textStyle="bold"
+            android:textColor="#AD1457"
+            android:textSize="@dimen/sp20"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp30"
+            android:hint="@string/Enter_your_name"
+            android:inputType="textPersonName"
+            android:textColorHint="#8D6E63"
+            android:textSize="@dimen/sp20"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp30"
+        android:paddingBottom="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:text="@string/college"
+            android:textSize="20sp"
+            android:textColor="#AD1457"
+            android:fontFamily="@font/arima_madurai_medium"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"/>
+
+        <EditText
+            android:id="@+id/college"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:hint="@string/enter_college"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColorHint="#8D6E63"
+            android:textSize="@dimen/sp20" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp30">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/contact"
+            android:gravity="bottom"
+            android:fontFamily="@font/arima_madurai_medium"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp20"
+            android:textColor="#AD1457"
+            android:layout_marginStart="@dimen/dp15"/>
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:hint="@string/enter_contact"
+            android:inputType="number"
+            android:maxLength="10"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp30">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/dp15"
+            android:text="@string/email"
+            android:fontFamily="@font/arima_madurai_medium"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            android:textSize="@dimen/sp20"
+            android:textColor="#AD1457"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:hint="@string/Enter_your_email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            android:textSize="@dimen/sp20" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp90">
+
+        <RadioButton
+            android:id="@+id/yes"
+            android:layout_width="@dimen/dp147"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp30"
+            android:fontFamily="@font/alike_angular"
+            android:text="@string/yes"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:text="@string/no"
+            android:textSize="@dimen/sp20"
+            android:fontFamily="@font/alike_angular"
+            android:textStyle="bold" />
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/study"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp10"
+        android:hint="@string/enter_study"
+        android:inputType="text"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:textColorHint="#8D6E63"
+        android:textSize="@dimen/sp25" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="142dp"
+        android:layout_height="81dp"
+        android:layout_marginHorizontal="@dimen/dp147"
+        android:layout_marginTop="@dimen/dp30"
+        android:fontFamily="@font/alike_angular"
+        android:text="@string/submit"
+        android:layout_gravity="center|bottom"
+        android:textColor="#F4EDED"
+        android:textSize="@dimen/sp20"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
+

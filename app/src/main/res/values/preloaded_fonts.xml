@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alike_angular</item>
+        <item>@font/arima_madurai_medium</item>
+        <item>@font/butcherman</item>
+        <item>@font/calistoga</item>
+        <item>@font/chewy</item>
+        <item>@font/coiny</item>
+        <item>@font/cookie</item>
+        <item>@font/wendy_one</item>
+    </array>
+</resources>

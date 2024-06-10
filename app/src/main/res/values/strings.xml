@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FirstAppyy</string>
+    <string name="name">Name</string>
+    <string name="submit">SUBMIT</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="college">College</string>
+    <string name="email">E-mail</string>
+    <string name="enter_college">Enter College</string>
+    <string name="Enter_your_email">Enter Your Email</string>
+    <string name="Enter_your_name">Enter your name</string>
+    <string name="enter_contact">Enter your Contact</string>
+    <string name="contact">Contact</string>
+    <string name="Congrats">Congratulations🎉</string>
+    <string name="enter_study">Enter your study Field</string>
+</resources>

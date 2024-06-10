@@ -5,17 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity2"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    android:background="#F4EDED">
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp130"
         android:layout_marginHorizontal="@dimen/dp60"
         android:text="@string/Congrats"
+        android:textColor="#6C065E"
         android:fontFamily="@font/calistoga"
         android:textSize="@dimen/sp30"
         android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp130"
+        android:textSize="@dimen/sp30"
+        android:paddingTop="@dimen/dp50"
+        android:hint="@string/User"
+        android:gravity="center"
+        android:fontFamily="@font/calistoga"
+        android:textColor="@color/black"/>
 
 
 </LinearLayout>

@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
+import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     var yes: RadioButton? = null
     var no: RadioButton? = null
     var study: EditText? = null
+    var yesno: RadioGroup? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,13 +40,8 @@ class MainActivity : AppCompatActivity() {
         yes = findViewById(R.id.yes)
         no = findViewById(R.id.no)
         study = findViewById(R.id.study)
+        yesno = findViewById(R.id.yesno)
         check = findViewById(R.id.submit)
-
-
-        check?.setOnClickListener {
-            Toast.makeText(this, "Information Submitted", Toast.LENGTH_LONG).show()
-
-        }
 
 
         yes?.setOnClickListener { }
@@ -58,21 +55,35 @@ class MainActivity : AppCompatActivity() {
         check?.setOnClickListener {
             if (name?.text.toString().trim().isEmpty()) {
                 name?.error = "Field cannot be empty"
-            } else if(college?.text.toString().trim().isNullOrEmpty()) {
-                college?.error="Field cannot be empty"
+            } else if (college?.text.toString().trim().isNullOrEmpty()) {
+                college?.error = "Field cannot be empty"
             } else if (contact?.text.toString().trim().isNullOrEmpty()) {
-                contact?.error="Field cannot be empty"
+                contact?.error = "Field cannot be empty"
             }
-            else if (study?.text.toString().trim().isEmpty()) {
-                study?.error = "Enter your study field"
-            }
+            // else if (for (intArrayOf(contact)[0]in 0..9{ contact.error
+
+            //
+
+            else if (email?.text.toString().trim().isNullOrEmpty()) {
+                email?.error = "Field cannot be empty"
+            } else if (yesno?.checkedRadioButtonId == -1) {
+                Toast.makeText(this, "Select one Option Yes/No", Toast.LENGTH_SHORT).show()
+            } else if (yes?.isChecked == true && study?.text.toString().isNullOrEmpty()) {
+                study?.error = "Enter the study  field"
+            } else {
                 val intent = Intent(this, MainActivity2::class.java)
+                intent.putExtra("name", name?.text.toString().trim())
+                intent.putExtra("contact number", contact?.text.toString().trim())
                 startActivity(intent)
+
             }
 
 
         }
     }
+}
+
+
 
 
 

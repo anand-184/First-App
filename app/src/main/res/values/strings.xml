@@ -13,4 +13,6 @@
     <string name="contact">Contact</string>
     <string name="Congrats">Congratulations🎉</string>
     <string name="enter_study">Enter your study Field</string>
+    <string name="etname">etname</string>
+    <string name="User">New User</string>
 </resources>

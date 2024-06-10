@@ -18,4 +18,5 @@
     <dimen name="dp90">90dp</dimen>
     <dimen name="dp60">60dp</dimen>
     <dimen name="dp10">10dp</dimen>
+    <dimen name="dp70" />
 </resources>

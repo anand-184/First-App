@@ -9,8 +9,15 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity2 : AppCompatActivity() {
     var etname :EditText ?= null
+    var etcollege :EditText ?=null
+    var etcontact :EditText ?=null
+    var etmail :EditText ?=null
+    var etstudy :EditText ?=null
     var enteredname=""
     var enterednumber=""
+    var enteredcollege=""
+    var enteredmail=""
+    var enteredstudy=""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,9 +31,19 @@ class MainActivity2 : AppCompatActivity() {
 
         intent?.extras?.let {
             enteredname=it.getString("name")?:""
-            enterednumber= it.getString("contact number")?:""
+            enterednumber= it.getString("contact_number")?:""
+            enteredcollege=it.getString("college_name")?:""
+            enteredmail=it.getString("mail")?:""
+            enteredstudy=it.getString("study_field")?:""
+
+
+
             System.out.println("key $enteredname $enterednumber ")
         }
         etname?.setText(enteredname)
+        etcollege?.setText(enteredcollege)
+        etcontact?.setText(enterednumber)
+        etmail?.setText(enteredmail)
+        etstudy?.setText(enteredmail)
     }
 }

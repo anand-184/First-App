@@ -30,6 +30,48 @@
         android:gravity="center"
         android:fontFamily="@font/calistoga"
         android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/etcontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp130"
+        android:textSize="@dimen/sp30"
+        android:layout_marginTop="@dimen/dp_20"
+        android:hint="@string/contact"
+        android:gravity="center"
+        android:fontFamily="@font/calistoga"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/etcollege"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp130"
+        android:textSize="@dimen/sp30"
+        android:hint="@string/college"
+        android:gravity="center"
+        android:fontFamily="@font/calistoga"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/etmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp130"
+        android:textSize="@dimen/sp30"
+        android:hint="@string/email"
+        android:gravity="center"
+        android:fontFamily="@font/calistoga"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etstudy"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp130"
+        android:fontFamily="@font/calistoga"
+        android:gravity="center"
+        android:hint="@string/studyField"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp30" />
 
 
 </LinearLayout>

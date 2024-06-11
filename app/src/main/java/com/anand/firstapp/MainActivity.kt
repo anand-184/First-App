@@ -44,7 +44,6 @@ class MainActivity : AppCompatActivity() {
         check = findViewById(R.id.submit)
 
 
-        yes?.setOnClickListener { }
         yes?.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 study?.visibility = View.VISIBLE
@@ -60,9 +59,9 @@ class MainActivity : AppCompatActivity() {
             } else if (contact?.text.toString().trim().isNullOrEmpty()) {
                 contact?.error = "Field cannot be empty"
             }
-            // else if (for (intArrayOf(contact)[0]in 0..9{ contact.error
-
-            //
+                else if((contact?.text.toString().trim().get(0)?.toInt()?:0)<6){
+                    contact?.error="Invalid Number"
+            }
 
             else if (email?.text.toString().trim().isNullOrEmpty()) {
                 email?.error = "Field cannot be empty"
@@ -73,7 +72,10 @@ class MainActivity : AppCompatActivity() {
             } else {
                 val intent = Intent(this, MainActivity2::class.java)
                 intent.putExtra("name", name?.text.toString().trim())
-                intent.putExtra("contact number", contact?.text.toString().trim())
+                intent.putExtra("contact_number", contact?.text.toString().trim())
+                intent.putExtra("college_name",college?.text.toString().trim())
+                intent.putExtra("mail",email?.text.toString().trim())
+                intent.putExtra("study_field",study?.text.toString().trim())
                 startActivity(intent)
 
             }
